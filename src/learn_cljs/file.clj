@@ -8,3 +8,10 @@
 (println "The result of the operation is: " (+ x x))
 (defn greet [name] (str "Hello " name))
 (println (greet "Nicolas"))
+
+(let [sides-list (list [4.2, 6] [4 4] [3 4] [5.5 3])]
+  (for [sides sides-list]
+    (
+      Math.sqrt (+ (Math.pow (first sides) 2)
+                   (Math.pow (second sides) 2))
+    )))
